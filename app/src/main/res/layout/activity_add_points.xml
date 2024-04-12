@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".AddPoints">
+
+  <ImageButton
+      android:id="@+id/adshower"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/adshow"
+      android:layout_margin="40dp"
+      app:layout_constraintBottom_toTopOf="@+id/cardView2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView2"
+      android:layout_width="match_parent"
+      android:layout_height="350dp"
+      android:layout_margin="20dp"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="40dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:text="Add Points"
+          android:textAlignment="center"
+          android:textAllCaps="true"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pay50btn"
+          style="@style/Widget.AppCompat.Button.Colored"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="#00FF04"
+          android:text="₹ 50 + 50 free"
+          android:textColor="#000000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pay100btn"
+          style="@style/Widget.AppCompat.Button.Colored"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="#00FF04"
+          android:text="₹ 100"
+          android:textColor="#000000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pay200btn"
+          style="@style/Widget.AppCompat.Button.Colored"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:background="#00FF04"
+          android:text="₹ 200"
+          android:textColor="#000000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/pay500btn"
+          style="@style/Widget.AppCompat.Button.Colored"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:background="#00FF04"
+          android:text="₹ 500"
+          android:textColor="#000000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/withdrawcashBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_margin="20dp"
+      android:background="#001AFF"
+      android:textColor="@color/white"
+      android:text="Withdraw in UPI"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

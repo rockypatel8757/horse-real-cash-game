@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "314933940298",
+    "project_id": "winzo-lite-bfe27",
+    "storage_bucket": "winzo-lite-bfe27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314933940298:android:60d24bd4a1a8ceee0cd6b3",
+        "android_client_info": {
+          "package_name": "com.rockypatel.winzolite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1AP3PTPM7_aXLnEQ28Jf4eHZsL7Inmmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
